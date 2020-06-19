@@ -1,5 +1,5 @@
 # windows-terminal-context-menu
-A simple batch script to add Windows Terminal context menu entries to Windows Explorer.
+A simple app to add Windows Terminal context menu entries to Windows Explorer.
 
 ## Example screenshots:
 ![Example screenshot dark](example-dark.png)
