@@ -9,4 +9,4 @@ A simple batch script to add Windows Terminal context menu entries to Windows Ex
 Download and run the latest installer from [here]().
 
 ### Deinstallation:
-Deinstall as you would any other Windows 10 application. Search for Window Terminal context menu in the apps list.
+Deinstall as you would any other Windows 10 application. Search for windows-terminal-context-menu in the apps list.
