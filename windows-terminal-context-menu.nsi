@@ -33,7 +33,7 @@ Goto continue
 keyexist:
 Goto alert
 alert:
-MessageBox MB_RETRYCANCEL "windows-terminal-context-menu is already installed, please uninstall any previous versions before continuing." IDRETRY retry IDCANCEL abort
+MessageBox MB_RETRYCANCEL "windows-terminal-context-menu is already installed, please deinstall any previous versions before continuing." IDRETRY retry IDCANCEL abort
 abort:
 Abort
 continue:
