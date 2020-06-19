@@ -2,7 +2,7 @@
 !include "MUI2.nsh"
 
 ; General
-Name "Windows Terminal context menu"
+Name "windows-terminal-context-menu"
 OutFile "windows-terminal-context-menu.exe"
 Unicode True
 InstallDir "$LOCALAPPDATA\Programs\windows-terminal-context-menu"
@@ -33,7 +33,7 @@ Goto continue
 keyexist:
 Goto alert
 alert:
-MessageBox MB_RETRYCANCEL "Windows Terminal context menu is already installed, please uninstall any previous versions before continuing." IDRETRY retry IDCANCEL abort
+MessageBox MB_RETRYCANCEL "windows-terminal-context-menu is already installed, please uninstall any previous versions before continuing." IDRETRY retry IDCANCEL abort
 abort:
 Abort
 continue:
@@ -57,7 +57,7 @@ WriteRegStr HKCU "SOFTWARE\Classes\Directory\shell\windows-terminal-elevated" "H
 WriteRegStr HKCU "SOFTWARE\Classes\Directory\shell\windows-terminal-elevated" "Icon" '"$INSTDIR\terminal.ico"'
 WriteRegStr HKCU "SOFTWARE\Classes\Directory\shell\windows-terminal-elevated" "MUIVerb" "Open elevated Terminal window here"
 WriteRegStr HKCU "SOFTWARE\Classes\Directory\shell\windows-terminal-elevated\command" "" '"$INSTDIR\helper.exe" "%V"'
-WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\windows-terminal-context-menu" "DisplayName" "Windows Terminal context menu"
+WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\windows-terminal-context-menu" "DisplayName" "windows-terminal-context-menu"
 WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\windows-terminal-context-menu" "UninstallString" '"$INSTDIR\uninstall.exe"'
 WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\windows-terminal-context-menu" "DisplayIcon" '$INSTDIR\uninstall.exe,0'
 WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\windows-terminal-context-menu" "DisplayVersion" "v1.1"
