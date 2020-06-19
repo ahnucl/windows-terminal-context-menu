@@ -1,0 +1,1 @@
+The helper.exe file is an AutoHotkey executable. This is pre-compiled so it's able to run on the machine without having to install AutoHotkey. If you don't trust pre-compiled executables feel free to compile it yourself using the AutoHotkey script file.
